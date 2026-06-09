@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KB3 Gaming</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:#050505;
+color:white;
+overflow-x:hidden;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+background:
+linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+url('https://images.unsplash.com/photo-1511512578047-dfb367046420');
+background-size:cover;
+background-position:center;
+padding:40px;
+}
+
+.hero h1{
+font-size:5rem;
+letter-spacing:5px;
+text-shadow:
+0 0 15px #8a2be2,
+0 0 35px #00bfff,
+0 0 60px #8a2be2;
+animation:glow 3s infinite alternate;
+}
+
+.hero p{
+font-size:1.3rem;
+margin-top:20px;
+max-width:700px;
+}
+
+@keyframes glow{
+from{
+text-shadow:
+0 0 15px #8a2be2,
+0 0 30px #00bfff;
+}
+to{
+text-shadow:
+0 0 30px #8a2be2,
+0 0 70px #00bfff;
+}
+}
+
+.socials{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+justify-content:center;
+margin-top:40px;
+}
+
+.socials a{
+text-decoration:none;
+color:white;
+padding:15px 25px;
+border-radius:15px;
+background:#111;
+border:2px solid #8a2be2;
+box-shadow:0 0 20px #8a2be2;
+transition:.3s;
+}
+
+.socials a:hover{
+transform:translateY(-8px) scale(1.05);
+box-shadow:0 0 40px #00bfff;
+}
+
+.section{
+padding:80px 20px;
+text-align:center;
+}
+
+.section h2{
+font-size:3rem;
+margin-bottom:30px;
+text-shadow:0 0 15px #8a2be2;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+max-width:1300px;
+margin:auto;
+}
+
+.card{
+background:#101010;
+border-radius:25px;
+overflow:hidden;
+box-shadow:0 0 25px rgba(138,43,226,.5);
+transition:.4s;
+transform-style:preserve-3d;
+}
+
+.card:hover{
+transform:
+perspective(1000px)
+rotateY(8deg)
+rotateX(4deg)
+scale(1.03);
+box-shadow:
+0 0 40px #8a2be2,
+0 0 60px #00bfff;
+}
+
+.card img{
+width:100%;
+display:block;
+}
+
+.card h3{
+padding:20px;
+font-size:1.4rem;
+}
+
+.about{
+max-width:900px;
+margin:auto;
+font-size:1.2rem;
+line-height:1.8;
+}
+
+.footer{
+padding:40px;
+text-align:center;
+background:#080808;
+border-top:2px solid #8a2be2;
+}
+
+.led-bar{
+height:6px;
+background:
+linear-gradient(
+90deg,
+#8a2be2,
+#00bfff,
+#8a2be2,
+#00bfff
+);
+background-size:400%;
+animation:moveLED 5s linear infinite;
+}
+
+@keyframes moveLED{
+0%{background-position:0%;}
+100%{background-position:400%;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="led-bar"></div>
+
+<section class="hero">
+<h1>KB3 GAMING</h1>
+
+<p>
+Streamer • Basketball Player • Content Creator
+</p>
+
+<div class="socials">
+<a href="https://www.twitch.tv/iso_kb3" target="_blank">Twitch</a>
+<a href="https://www.tiktok.com/@iso_kb3?_r=1&_t=ZT-9748VPrA95K" target="_blank">TikTok</a>
+<a href="https://www.instagram.com/kahlielbernard" target="_blank">Instagram</a>
+</div>
+</section>
+
+<section class="section">
+<h2>Featured Content</h2>
+
+<div class="gallery">
+
+<div class="card">
+<img src="YOUR_ALASKA_IMAGE_HERE">
+<h3>Live Stream Events</h3>
+</div>
+
+<div class="card">
+<img src="YOUR_PURPLE_KB3_IMAGE_HERE">
+<h3>KB3 Stream Promotions</h3>
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<h2>About KB3</h2>
+
+<div class="about">
+Basketball player, gamer, streamer, and content creator.
+Follow along for live streams, gaming content,
+basketball highlights, and future projects.
+</div>
+</section>
+
+<div class="footer">
+<h3>KB3 Gaming</h3>
+<p>Powered by Twitch • TikTok • Instagram</p>
+</div>
+
+</body>
+</html>
